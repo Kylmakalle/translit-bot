@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  translit-bot:
+    image: ghcr.io/kylmakalle/translit-bot:latest
+    container_name: translit-bot
+    logging:
+      options:
+        max-size: "10M"
+        max-file: "10"
+    environment:
+      BOT_TOKEN: $BOT_TOKEN
