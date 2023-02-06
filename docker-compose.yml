@@ -4,6 +4,7 @@ services:
   translit-bot:
     image: ghcr.io/kylmakalle/translit-bot:latest
     container_name: translit-bot
+    restart: always
     logging:
       options:
         max-size: "10M"
